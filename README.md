@@ -23,23 +23,6 @@ The project demonstrates:
 
 ---
 
-# 📂 Repository Structure
-
-```text
-.
-├── MNIST_FineTuning.ipynb
-├── FashionMNIST_FineTuning.ipynb
-├── HODA_FineTuning.ipynb
-├── figures/
-│   ├── mnist_results.png
-│   ├── fashion_results.png
-│   ├── hoda_results.png
-│   └── training_curves.png
-├── requirements.txt
-└── README.md
-```
-
----
 
 # 🚀 Features
 
