@@ -1,74 +1,147 @@
+# 🧠 MLP Fine-Tuning for Handwritten Digit and Fashion Image Classification
 
-# MNIST MLP Fine-Tuning
+This repository presents an end-to-end implementation of **Multi-Layer Perceptron (MLP)** fine-tuning using TensorFlow and Keras across multiple benchmark datasets. The project evaluates the generalization capability of a simple neural network on handwritten digit recognition and fashion image classification tasks.
 
-This repository contains a notebook for fine-tuning an **MLP (Multi-Layer Perceptron)** model on the **MNIST** handwritten digits dataset.  
-The notebook includes:
+The repository includes experiments on:
 
-- Loading and preprocessing MNIST data  
-- Building and training an MLP model  
-- Fine-tuning on custom data  
-- Saving and loading trained models  
-- Generating predictions  
+* **MNIST** – Handwritten digit recognition
+* **Fashion-MNIST** – Fashion item classification
+* **HODA** – Persian handwritten digit recognition
 
 ---
 
-## 📌 Project Structure
+# 📌 Project Overview
 
+The project demonstrates:
 
-
----
-
-## 🚀 Features
-
-- Simple MLP architecture for digit classification  
-- Fine-tuning workflow for improving performance  
-- Clean and readable implementation  
-- Easy to extend for experiments or custom datasets  
+* Loading and preprocessing benchmark datasets
+* Building and training an MLP classifier
+* Fine-tuning across different datasets
+* Model evaluation
+* Saving and loading trained models
+* Prediction visualization
 
 ---
 
-## 🧠 Model Overview
+# 📂 Repository Structure
 
-- Input: 28×28 grayscale image  
-- Layers: Dense hidden layers + ReLU  
-- Optimizer: Adam  
-- Loss: Sparse Categorical Crossentropy  
-- Output: 10-class digit prediction (0–9)
+```text
+.
+├── MNIST_FineTuning.ipynb
+├── FashionMNIST_FineTuning.ipynb
+├── HODA_FineTuning.ipynb
+├── figures/
+│   ├── mnist_results.png
+│   ├── fashion_results.png
+│   ├── hoda_results.png
+│   └── training_curves.png
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## 📦 Requirements
+# 🚀 Features
 
-You can install required libraries with:
+* ✅ MLP implementation using TensorFlow/Keras
+* ✅ Handwritten digit recognition
+* ✅ Persian handwritten digit classification
+* ✅ Fashion image classification
+* ✅ Fine-tuning workflow
+* ✅ Model saving and loading
+* ✅ Prediction visualization
+* ✅ Modular and reusable implementation
 
-```bash
-pip install tensorflow numpy matplotlib
+---
 
+# 🧠 Model Architecture
 
+* Input: 28 × 28 grayscale images
+* Hidden Layers: Fully Connected (Dense) + ReLU
+* Optimizer: Adam
+* Loss Function: Sparse Categorical Crossentropy
+* Output Layer: 10 classes (Softmax)
 
-▶️ How to Run
+---
+
+# 📊 Experimental Results
+
+| Dataset           | Classes | Training Accuracy | Validation / Test Accuracy |
+| ----------------- | ------: | ----------------: | -------------------------: |
+| **MNIST**         |      10 |        **97.99%** |                 **97.96%** |
+| **Fashion-MNIST** |      10 |        **74.57%** |                 **78.14%** |
+| **HODA**          |      10 |        **99.66%** |                 **85.10%** |
+
+---
+
+# 📈 Dataset Comparison
+
+| Dataset       | Task                          | Difficulty  |
+| ------------- | ----------------------------- | ----------- |
+| MNIST         | Handwritten English digits    | Easy        |
+| Fashion-MNIST | Fashion object classification | Medium      |
+| HODA          | Persian handwritten digits    | Challenging |
+
+---
+
+# 💻 Technologies
+
+* Python
+* TensorFlow
+* Keras
+* NumPy
+* Matplotlib
+* Scikit-learn
+
+---
+
+# 📦 Installation
 
 Clone the repository:
 
-git clone https://github.com/<your-username>/mnist-mlp-finetuning.git
-cd mnist-mlp-finetuning
+```bash
+git clone https://github.com/roghayefazli/mlp-fine-tuning-handwritten-recognition.git
+cd mlp-fine-tuning-handwritten-recognition
+```
 
+Install dependencies:
 
-Open the notebook:
+```bash
+pip install -r requirements.txt
+```
 
-jupyter notebook MNIST_FineTuning.ipynb
+---
 
+# ▶️ Running the Project
 
-Run all cells to train or fine-tune the model.
+Run the notebooks individually:
 
-📊 Results
+1. `MNIST_FineTuning.ipynb`
+2. `FashionMNIST_FineTuning.ipynb`
+3. `HODA_FineTuning.ipynb`
 
-The notebook prints accuracy and loss for training and test sets, and includes demonstration predictions.
+---
 
-✨ Author
+# 🔬 Future Improvements
 
-Roghayeh (Rogheye) Fazli
-MSc Student in Artificial Intelligence
+* Compare MLP with CNN architectures
+* Hyperparameter optimization
+* Data augmentation
+* Persian handwritten character recognition
+* Cross-dataset transfer learning
 
+---
 
+# 📄 License
 
+This project is released under the MIT License.
+
+---
+
+# 👩‍💻 Author
+
+**Roghayeh Fazli**
+
+M.Sc. Student in Artificial Intelligence
+
+GitHub: https://github.com/roghayefazli
